@@ -52,6 +52,21 @@ namespace OutputProperties
             get { return string.Format("Full Name: {0} {1}", FirstName, LastName); }
         }
 
+        public string FavoriteColor
+        {
+            get { return _favoriteColor; }
+            set
+            {
+                if (value == _favoriteColor) return;
+                _favoriteColor = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string Sentence
+        {
+            get { return string.Format("{0}'s favorite color is: {1}", FullName, FavoriteColor); }
+        }
      
     }
 }

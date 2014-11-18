@@ -5,6 +5,8 @@
     <StackPanel>
         <TextBox Text="{Binding FirstName}"></TextBox>
         <TextBox Text="{Binding LastName}"></TextBox>
+        <TextBox Text="{Binding FavoriteColor}"></TextBox>
         <Label Content="{Binding FullName}"></Label>
+        <Label Content="{Binding Sentence}"></Label>
     </StackPanel>
 </Window>
